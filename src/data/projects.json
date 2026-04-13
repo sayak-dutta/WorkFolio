@@ -4,6 +4,7 @@
 		"title": "Peritum Creative House",
 		"description": "A dynamic corporate website built for Peritum Creative House showcasing their creative services and portfolio.",
 		"liveUrl": "https://peritumcreativehouse.com/in",
+		"mobileImage": "/images/proj_1_mobile.png",
 		"techStack": [
 			"WordPress",
 			"PHP",
@@ -17,6 +18,7 @@
 		"title": "Packers Haven",
 		"description": "An intuitive platform for Packers Haven designed to generate moving and packing service leads.",
 		"liveUrl": "https://packershaven.com/",
+		"mobileImage": "/images/proj_2_mobile.png",
 		"techStack": [
 			"WordPress",
 			"PHP",
@@ -30,6 +32,7 @@
 		"title": "REI Studio",
 		"description": "Creative agency portfolio for REI Studio, featuring a polished and responsive layout.",
 		"liveUrl": "https://reistudio.co.in/",
+		"mobileImage": "/images/proj_3_mobile.png",
 		"techStack": [
 			"WordPress",
 			"PHP",
@@ -43,6 +46,7 @@
 		"title": "Paahi Productions",
 		"description": "High-conversion video production agency landing page for Paahi Productions.",
 		"liveUrl": "https://studio.paahiproductions.in/",
+		"mobileImage": "/images/proj_4_mobile.png",
 		"techStack": [
 			"Webflow",
 			"HTML5",

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Lexend, Barlow_Condensed } from 'next/font/google'
 import './globals.css'
 
@@ -15,9 +15,39 @@ const barlowCondensed = Barlow_Condensed({
   display: 'swap',
 })
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  themeColor: '#000000',
+}
+
 export const metadata: Metadata = {
-  title: 'Workfolio | Sayak',
-  description: 'Full-screen portfolio presentation web app for a senior freelance developer.',
+  metadataBase: new URL('https://work.sayak.me'), // Fallback URL, update safely
+  title: {
+    default: 'Sayak | Senior Freelance Developer',
+    template: '%s | Sayak',
+  },
+  description: 'Interactive presentation portfolio showcasing premium React, Next.js, and Custom CMS builds.',
+  keywords: ['Sayak', 'Freelance Developer', 'Full Stack Developer', 'React', 'Next.js', 'Portfolio'],
+  authors: [{ name: 'Sayak', url: 'https://work.sayak.me' }],
+  creator: 'Sayak',
+  openGraph: {
+    type: 'website',
+    locale: 'en_IN',
+    url: 'https://work.sayak.me',
+    siteName: 'Sayak Portfolio',
+    title: 'Sayak | Senior Freelance Developer',
+    description: 'Interactive portfolio showcasing production-ready React, Next.js, and custom CMS projects.',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Sayak Portfolio' }], // Add an og-image.png in public/
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Sayak | Senior Freelance Developer',
+    description: 'Interactive portfolio showcasing production-ready React, Next.js, and custom CMS projects.',
+    images: ['/og-image.png'],
+  },
+  robots: { index: true, follow: true },
 }
 
 export default function RootLayout({
@@ -31,3 +61,4 @@ export default function RootLayout({
     </html>
   )
 }
+

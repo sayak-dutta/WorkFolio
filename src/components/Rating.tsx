@@ -55,8 +55,11 @@ export function Rating({ projectId, projectTitle }: RatingProps) {
               onClick={() => handleRating(star)}
               onMouseEnter={() => setHoveredRating(star)}
               onMouseLeave={() => setHoveredRating(0)}
+              aria-label={`Rate ${star} out of 5 stars`}
+              title={`Rate ${star} stars`}
             >
               <Star
+                aria-hidden="true"
                 className={cn(
                   "w-6 h-6 transition-colors",
                   hoveredRating >= star || rating >= star

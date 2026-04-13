@@ -65,11 +65,19 @@ export function ProjectShowcase({ projects }: { projects: ProjectData[] }) {
               <ExternalLink className="w-3 h-3 md:w-4 md:h-4" />
             </a>
             <div className="flex gap-2 md:gap-4 mt-2">
-              <button onClick={handlePrev} className="p-2 md:p-3 rounded-full bg-zinc-900 border border-zinc-800 hover:bg-zinc-800 transition">
-                <ArrowLeft className="w-4 h-4 md:w-5 md:h-5" />
+              <button 
+                onClick={handlePrev} 
+                className="p-2 md:p-3 rounded-full bg-zinc-900 border border-zinc-800 hover:bg-zinc-800 transition"
+                aria-label="Previous Project"
+              >
+                <ArrowLeft className="w-4 h-4 md:w-5 md:h-5" aria-hidden="true" />
               </button>
-              <button onClick={handleNext} className="p-2 md:p-3 rounded-full bg-zinc-900 border border-zinc-800 hover:bg-zinc-800 transition">
-                <ArrowRight className="w-4 h-4 md:w-5 md:h-5" />
+              <button 
+                onClick={handleNext} 
+                className="p-2 md:p-3 rounded-full bg-zinc-900 border border-zinc-800 hover:bg-zinc-800 transition"
+                aria-label="Next Project"
+              >
+                <ArrowRight className="w-4 h-4 md:w-5 md:h-5" aria-hidden="true" />
               </button>
             </div>
           </div>
@@ -85,15 +93,19 @@ export function ProjectShowcase({ projects }: { projects: ProjectData[] }) {
                 <button
                   onClick={() => setDevice("desktop")}
                   className={`flex items-center gap-2 px-4 lg:px-6 py-2 rounded-full transition ${device === "desktop" ? "bg-zinc-700 text-white" : "text-zinc-400 hover:text-white"}`}
+                  aria-label="View Desktop Mockup"
+                  aria-pressed={device === "desktop"}
                 >
-                  <Monitor className="w-4 h-4" />
+                  <Monitor className="w-4 h-4" aria-hidden="true" />
                   <span className="text-sm font-medium hidden sm:inline-block">Desktop</span>
                 </button>
                 <button
                   onClick={() => setDevice("mobile")}
                   className={`flex items-center gap-2 px-4 lg:px-6 py-2 rounded-full transition ${device === "mobile" ? "bg-zinc-700 text-white" : "text-zinc-400 hover:text-white"}`}
+                  aria-label="View Mobile Mockup"
+                  aria-pressed={device === "mobile"}
                 >
-                  <Smartphone className="w-4 h-4" />
+                  <Smartphone className="w-4 h-4" aria-hidden="true" />
                   <span className="text-sm font-medium hidden sm:inline-block">Mobile</span>
                 </button>
               </div>
@@ -160,13 +172,16 @@ export function ProjectShowcase({ projects }: { projects: ProjectData[] }) {
               </motion.div>
             </AnimatePresence>
 
-            <div className="mt-auto pt-4 lg:pt-8 bg-black">
+            <div className="mt-auto pt-4 lg:pt-8 bg-black flex flex-col gap-4">
               <button
                 onClick={() => setBookingOpen(true)}
                 className="w-full py-3 lg:py-4 bg-blue-600 hover:bg-blue-500 text-white text-sm lg:text-base font-bold rounded-xl shadow-lg shadow-blue-500/20 transition-all active:scale-95"
               >
                 Book Delivery
               </button>
+              <div className="text-center text-zinc-600 text-xs mt-2">
+                Designed & Engineered by <a href="https://sayak.me" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Sayak Dutta</a>
+              </div>
             </div>
           </div>
         </main>

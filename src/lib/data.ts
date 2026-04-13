@@ -7,6 +7,7 @@ export interface ProjectData {
   liveUrl: string;
   techStack: string[];
   moreInfo: string;
+  mobileImage: string;
 }
 
 export async function fetchProjects(): Promise<ProjectData[]> {
