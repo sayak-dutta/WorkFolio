@@ -1,0 +1,54 @@
+[
+	{
+		"id": "proj_1",
+		"title": "Peritum Creative House",
+		"description": "A dynamic corporate website built for Peritum Creative House showcasing their creative services and portfolio.",
+		"liveUrl": "https://peritumcreativehouse.com/in",
+		"techStack": [
+			"WordPress",
+			"PHP",
+			"CSS3",
+			"JavaScript"
+		],
+		"moreInfo": "A custom WordPress build tailored for high performance and seamless content management."
+	},
+	{
+		"id": "proj_2",
+		"title": "Packers Haven",
+		"description": "An intuitive platform for Packers Haven designed to generate moving and packing service leads.",
+		"liveUrl": "https://packershaven.com/",
+		"techStack": [
+			"WordPress",
+			"PHP",
+			"MySQL",
+			"Tailwind CSS"
+		],
+		"moreInfo": "Optimized lead capture funnels and an SEO-friendly architecture."
+	},
+	{
+		"id": "proj_3",
+		"title": "REI Studio",
+		"description": "Creative agency portfolio for REI Studio, featuring a polished and responsive layout.",
+		"liveUrl": "https://reistudio.co.in/",
+		"techStack": [
+			"WordPress",
+			"PHP",
+			"GSAP",
+			"CSS"
+		],
+		"moreInfo": "Focused on smooth animations and an interactive user experience to highlight their creative work."
+	},
+	{
+		"id": "proj_4",
+		"title": "Paahi Productions",
+		"description": "High-conversion video production agency landing page for Paahi Productions.",
+		"liveUrl": "https://studio.paahiproductions.in/",
+		"techStack": [
+			"Webflow",
+			"HTML5",
+			"CSS3",
+			"Interactions"
+		],
+		"moreInfo": "Leveraged Webflow's native interactions to create a highly visual storytelling experience."
+	}
+]
