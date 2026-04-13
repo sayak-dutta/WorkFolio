@@ -54,5 +54,95 @@
 			"Interactions"
 		],
 		"moreInfo": "Leveraged Webflow's native interactions to create a highly visual storytelling experience."
+	},
+	{
+		"id": "proj_5",
+		"title": "Aimy Beauty",
+		"description": "Premium beauty salon and aesthetics booking platform with an elegant layout.",
+		"liveUrl": "https://aimybeauty.co.uk/",
+		"mobileImage": "/images/proj_5_mobile.png",
+		"techStack": ["WordPress", "Elementor", "WooCommerce", "PHP"],
+		"moreInfo": "Designed with a fully integrated ecommerce system optimized for high conversion."
+	},
+	{
+		"id": "proj_6",
+		"title": "Tooth Talk",
+		"description": "A modern and welcoming dental practice website designed to generate patient inquiries.",
+		"liveUrl": "https://toothtalk.uk/",
+		"mobileImage": "/images/proj_6_mobile.png",
+		"techStack": ["WordPress", "PHP", "CSS3", "JavaScript"],
+		"moreInfo": "Focuses on local SEO and capturing patient leads through a streamlined UX."
+	},
+	{
+		"id": "proj_7",
+		"title": "Reach Rocket",
+		"description": "High-performance digital marketing agency landing page.",
+		"liveUrl": "https://reachrocket.uk/",
+		"mobileImage": "/images/proj_7_mobile.png",
+		"techStack": ["WordPress", "GSAP", "Tailwind CSS", "PHP"],
+		"moreInfo": "Built for fast load times and intense visual storytelling to sell B2B services."
+	},
+	{
+		"id": "proj_8",
+		"title": "Next Business Solution",
+		"description": "Corporate B2B logistics and operational solutions directory.",
+		"liveUrl": "https://nextbusinesssolution.us/",
+		"mobileImage": "/images/proj_8_mobile.png",
+		"techStack": ["WordPress", "PHP", "MySQL", "CSS3"],
+		"moreInfo": "Engineered a robust database architecture to handle scalable enterprise-level B2B networking."
+	},
+	{
+		"id": "proj_9",
+		"title": "First Stop Signature Spaces",
+		"description": "Luxurious property and signature architectural space showcase.",
+		"liveUrl": "https://firststopsignaturespaces.co.uk/",
+		"mobileImage": "/images/proj_9_mobile.png",
+		"techStack": ["WordPress", "JavaScript", "Advanced Custom Fields", "PHP"],
+		"moreInfo": "A deeply visual, image-heavy architecture presentation requiring immaculate responsive scaling."
+	},
+	{
+		"id": "proj_10",
+		"title": "First Stop Home Improvements",
+		"description": "Lead generation site for localized home improvement contracting.",
+		"liveUrl": "https://firststophomeimprovements.com/",
+		"mobileImage": "/images/proj_10_mobile.png",
+		"techStack": ["WordPress", "Lead Gen Forms", "PHP", "SEO"],
+		"moreInfo": "Laser-focused on user journey funnels and immediate contact action hooks."
+	},
+	{
+		"id": "proj_11",
+		"title": "Nork Journey",
+		"description": "Engaging travel, lifestyle, and journey blogging platform.",
+		"liveUrl": "https://norkjourney.com/",
+		"mobileImage": "/images/proj_11_mobile.png",
+		"techStack": ["WordPress", "Gutenberg", "PHP", "Optimization"],
+		"moreInfo": "Customized editorial experience optimized for incredibly fast content delivery."
+	},
+	{
+		"id": "proj_12",
+		"title": "Rotary Kolkata Benevolence",
+		"description": "International non-profit charitable initiative presentation.",
+		"liveUrl": "https://rotarykolkatabenevolence.com/",
+		"mobileImage": "/images/proj_12_mobile.png",
+		"techStack": ["WordPress", "Donation Gateway", "PHP", "MySQL"],
+		"moreInfo": "Integrates secure donation gateways to drive charitable engagement."
+	},
+	{
+		"id": "proj_13",
+		"title": "Blue Pepper",
+		"description": "A high-end contemporary culinary and catering presentation.",
+		"liveUrl": "https://bbluepepper.com/",
+		"mobileImage": "/images/proj_13_mobile.png",
+		"techStack": ["WordPress", "WooCommerce", "CSS3", "JavaScript"],
+		"moreInfo": "Showcases immersive culinary imagery alongside a seamless customized ordering experience."
+	},
+	{
+		"id": "proj_14",
+		"title": "SpaceBox Design",
+		"description": "Sleek and modern interior design and architectural agency portfolio.",
+		"liveUrl": "https://www.spaceboxdesign.com/",
+		"mobileImage": "/images/proj_14_mobile.png",
+		"techStack": ["WordPress", "GSAP Animations", "PHP", "Tailwind CSS"],
+		"moreInfo": "Heavily relies on interactive scrolling and micro-animations to sell premium design concepts."
 	}
 ]

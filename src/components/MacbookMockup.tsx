@@ -31,14 +31,24 @@ export function MacbookMockup({ iframeUrl, className, isAutoScroll = false }: Ma
     autoScrollYRef.current = 0;
     if (iframeRef.current) iframeRef.current.style.transform = "translateY(0)";
     const interval = setInterval(() => {
-      setProgress((p) => (p >= 90 ? p : p + Math.random() * 12));
-    }, 300);
-    return () => clearInterval(interval);
+      setProgress((p) => (p >= 90 ? p : p + Math.random() * 25));
+    }, 100);
+    
+    // Force reveal after 1.2s max if iframe is slow
+    const forceReveal = setTimeout(() => {
+      setProgress(100);
+      setTimeout(() => setIframeLoaded(true), 150);
+    }, 1200);
+
+    return () => {
+      clearInterval(interval);
+      clearTimeout(forceReveal);
+    };
   }, [iframeUrl]);
 
   const handleIframeLoad = () => {
     setProgress(100);
-    setTimeout(() => setIframeLoaded(true), 200);
+    setTimeout(() => setIframeLoaded(true), 150);
   };
 
   // Scale the 1440px iframe container to fit the actual rendered width
