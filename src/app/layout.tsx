@@ -39,13 +39,13 @@ export const metadata: Metadata = {
     siteName: 'Sayak Portfolio',
     title: 'Sayak | Senior Freelance Developer',
     description: 'Interactive portfolio showcasing production-ready React, Next.js, and custom CMS projects.',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Sayak Portfolio' }], // Add an og-image.png in public/
+    images: [{ url: '/images/og-image.jpg', width: 1200, height: 630, alt: 'Sayak Portfolio' }], 
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Sayak | Senior Freelance Developer',
     description: 'Interactive portfolio showcasing production-ready React, Next.js, and custom CMS projects.',
-    images: ['/og-image.png'],
+    images: ['/images/og-image.jpg'],
   },
   robots: { index: true, follow: true },
 }
