@@ -1,0 +1,94 @@
+[
+  {
+    "slug": "infrastructure-resilience",
+    "title": {
+      "line1": "Case",
+      "line2": "Study",
+      "line3": "Infrastructure",
+      "line4": "Resilience"
+    },
+    "subtitle": "Global Identity Gateway Provider (Paris/Seoul/SF HQ)",
+    "initiatives": [
+      {
+        "title": "Observability Overhaul",
+        "description": "Modernizing the tracking and analysis of distributed identity verification transactions to eliminate blind spots and reduce operational overhead."
+      },
+      {
+        "title": "Disaster Recovery Automation",
+        "description": "Ensuring compliance-grade, automated backups for databases and raw logs to meet strict security audit requirements."
+      }
+    ],
+    "overview": {
+      "intro": "We re-architected the monitoring and disaster recovery infrastructure for a leading global Identity Gateway provider. By migrating to a localized collector pattern and implementing event-driven circuit breakers, we drastically reduced maintenance overhead while improving system visibility. Simultaneously, we engineered automated, compliance-grade backups for both databases and logs, ensuring guaranteed data retention with zero manual intervention.",
+      "mainResult": {
+        "value": "99.9%",
+        "label": "Log Availability & System Uptime"
+      },
+      "metrics": [
+        {
+          "value": "99.9%",
+          "description": "Log Availability & System Uptime"
+        },
+        {
+          "value": "24 Hrs",
+          "description": "Maximum Recovery Point Objective (RPO)"
+        },
+        {
+          "value": "100%",
+          "description": "Audit-Ready Compliance (90-Day Automated Retention)"
+        }
+      ]
+    },
+    "strategy": {
+      "title": "THE ENGINEERING STRATEGY IS THE KEY TO SUCCESS",
+      "results": [
+        {
+          "value": "100%",
+          "label": "UPTIME DURING LOGGING SPIKES"
+        },
+        {
+          "value": "Zero",
+          "label": "TOUCH DISASTER RECOVERY PIPELINE"
+        }
+      ],
+      "challenges": [
+        {
+          "num": "01",
+          "title": "Fragmented Logging & System Noise",
+          "description": "Logs were scattered across server file systems, making debugging distributed transactions across microservices nearly impossible. A self-managed dashboard required constant patching, and recursive application errors (like 404 loops) were silently filling disk space without triggering immediate alerts.",
+          "solution": "We implemented a hybrid observability architecture deploying lightweight Prometheus and Loki containers to aggregate data locally, visualized through AWS Managed Grafana to offload maintenance. We built an event-driven Node.js logger utilizing a Circuit Breaker transport. If the logging backend fails or slows down, the circuit opens to prevent backpressure on the main application, ensuring 100% service uptime. Additionally, we implemented a GlobalLoggingInterceptor for distributed tracing and strict PII redaction middleware."
+        },
+        {
+          "num": "02",
+          "title": "Disaster Recovery & Compliance Gaps",
+          "description": "Database backups were ad-hoc, risking massive data loss during potential catastrophic failures. Furthermore, system logs—which are critical for security audits in the identity sector—lacked a guaranteed retention policy, exposing the organization to significant compliance risks.",
+          "solution": "We built a 'Set and Forget' automation suite. We engineered PM2-managed TypeScript sidecars for intelligent daily MongoDB snapshots and raw log shipping, streaming compressed data securely to AWS S3. We applied AWS S3 Lifecycle Rules to automatically transition regular backups to expiry after exactly 90 days, perfectly balancing aggressive compliance requirements with scalable storage costs."
+        }
+      ],
+      "footer": "WE BUILD RESILIENT SYSTEMS THAT SCALE WITH PURPOSE"
+    },
+    "techStack": [
+      "Docker",
+      "AWS (S3, Managed Grafana)",
+      "PM2",
+      "Prometheus",
+      "Grafana Loki",
+      "Winston",
+      "TypeScript",
+      "Node.js",
+      "Shell Scripting",
+      "Distributed Tracing"
+    ],
+    "testimonials": [
+      {
+        "name": "Engineering Leadership",
+        "role": "Stakeholder",
+        "text": "The new observability stack allows instant correlation of request IDs across our microservices. The automated redaction of sensitive tracking data ensures zero-knowledge compliance before logs even leave the application, making our compliance audits seamless."
+      }
+    ],
+    "engineers": [
+      "Sayak Dutta",
+      "Nilotpal Bose"
+    ]
+  }
+]
