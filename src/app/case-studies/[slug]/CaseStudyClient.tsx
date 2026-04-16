@@ -101,7 +101,7 @@ export default function CaseStudyClient({ slug }: CaseStudyClientProps) {
             className="flex flex-col lg:flex-row gap-16 lg:gap-8 justify-between items-start mb-24"
           >
             <motion.div variants={fadeIn} className="lg:w-1/2">
-              <h1 className="text-7xl md:text-8xl lg:text-9xl font-black tracking-tighter leading-[0.85] uppercase">
+              <h1 className="font-black tracking-tighter leading-[0.85] uppercase" style={{ fontSize: "clamp(3.5rem, 7vw, 9rem)" }}>
                 {study.title?.line1 && <span className="block text-white">{study.title.line1}</span>}
                 {study.title?.line2 && <span className="block text-white">{study.title.line2}</span>}
                 {study.title?.line3 && <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-indigo-400">{study.title.line3}</span>}
